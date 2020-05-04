@@ -9,8 +9,8 @@ class MainContent extends React.Component {
         return (
             <main className="main-content">
                 <section className="main-content_sect-about" id="aboutus">
-                    <h2 className="main-content_sect-about_title">About us</h2>
-                    <img className="main-content_sect-about_img" alt="about us" src="/dist/images/aboutus.jpg"></img>
+                    <h2 className="main-content_sect-about_title">About Us</h2>
+                    <img className="main-content_sect-about_img" alt="about us" src="blog/dist/images/aboutus.jpg"></img>
                     <p className="main-content_sect-about_text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, magnam tempore. Perspiciatis, voluptatem. Distinctio, recusandae, placeat eos quas laudantium, illo voluptas aspernatur corrupti nostrum sunt nam nesciunt necessitatibus temporibus praesentium?
                         Magnam velit alias deserunt harum cum neque culpa dolores ea quaerat vitae mollitia quae ab optio, totam, nihil animi nemo placeat omnis assumenda rem sed? Laboriosam nam ea facere enim?

@@ -9,7 +9,8 @@ class Main extends React.Component {
     constructor() {
         super();
         this.state = {
-            posts: posts
+            posts: posts,
+            page: ""
         }
         
     }

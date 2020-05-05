@@ -5,9 +5,35 @@ import ContactForm from "./ContactForm";
 
 class MainContent extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            button: ""
+        }
+    }
+    
+
+    
+        componentDidMount() {
+            this.handleScroll = ( )=> {
+                this.setState({
+                    button: window.pageYOffset
+                })
+            }
+
+            window.addEventListener("scroll", this.handleScroll)
+     
+        }
+
+        toTop = () => {
+            window.scrollTo(0, 0)
+        }
+        
+    
+
     render() {
         return (
-            <main className="main-content">
+            <main className="main-content" onScroll={this.click}>
                 <section className="main-content_sect-about" id="aboutus">
                     <h2 className="main-content_sect-about_title">About Us</h2>
                     <img className="main-content_sect-about_img" alt="about us" src="dist/images/aboutus.jpg"></img>
@@ -27,6 +53,7 @@ class MainContent extends React.Component {
                 <section className="main-content_sect-contact">
                     <ContactForm />
                 </section>
+                {this.state.button > 150 && <button className="onTop" onClick={this.toTop}>Wróć na górę</button>}
             </main>
         )
     }

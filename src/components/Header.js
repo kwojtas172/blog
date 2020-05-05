@@ -11,6 +11,7 @@ class Header extends React.Component {
         
     }
     
+    
 
     showMenu = () => {
         this.setState({
@@ -18,6 +19,7 @@ class Header extends React.Component {
         })
     }
 
+    
     render() {
         return (
            <header className="header-content">
@@ -32,6 +34,7 @@ class Header extends React.Component {
                    <div className="header-content_header-nav_show-menu" style={{display: window.innerWidth < 720 ? "block" : "none"}} onClick={this.showMenu}>
                     </div>
                </nav>
+               
            </header>
         )
     }

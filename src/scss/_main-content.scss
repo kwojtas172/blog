@@ -127,19 +127,23 @@
   height: 40rem;
   padding: 1rem;
   border-radius: 1rem;
+
+  h4 {
+    color: $color-1;
+  }
   
   label {
     display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: $color-3;
-  height: 100%;
-  padding: 0.5rem;
-  border: 0.15rem solid $color-1;
-  border-radius: 1rem;
-  font-size: 1.5rem;
-  color: $color-2;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $color-3;
+    height: 100%;
+    padding: 0.5rem;
+    // border: 0.15rem solid $color-1;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color: $color-2;
 
   .good {
     color: #146105;
@@ -189,8 +193,8 @@
 
 
 .onTop {
-  background-color: #ce4242;
-  border: 0.15rem solid #ce4242;
+  background-color: lighten($color-3, 20%);
+  border: 0.15rem solid lighten($color-3, 20%);
   width: 7rem;
   height: 3rem;
   border-radius: 1rem;
@@ -199,7 +203,7 @@
   right: 2rem;
   cursor: pointer;
   &:hover {
-    background-color: lighten(#ce4242, 20%);
+    background-color: lighten($color-3, 30%);
   }
   &:focus {
     outline: none;
